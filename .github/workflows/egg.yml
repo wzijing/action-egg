@@ -6,7 +6,7 @@ jobs:
 
         steps:
         - uses: actions/checkout@v4
-        - run: cd /home/runner/work/action-egg/action-egg/vue_admin
+        - run: cd vue_admin
         - run: pwd
         - run: ls -l
         - run: npm --version
