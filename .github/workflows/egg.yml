@@ -3,19 +3,14 @@ jobs:
     npm-build:
         name: npm-build工作
         runs-on: ubuntu-latest
-
+        defaults:
+            run:
+              working-directory: ./vue_admin
         steps:
-        - uses: actions/checkout@v4
-        - run: cd vue_admin
+        - uses: actions/checkout@v4   
         - run: pwd
-        - run: |
-            ls -l
-            working-directory: ./vue_admin
+        - run: ls -l           
         - run: npm --version
-        - run: |
-            npm install
-            working-directory: ./vue_admin
-        - run: |
-            npm run build
-            working-directory: ./vue_admin
-
+        - run: npm install
+        - run: npm run build
+            
