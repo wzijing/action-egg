@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         defaults:
             run:
-              working-directory: ./vue_admin
+              working-directory: ./
         steps:
         - uses: actions/checkout@v4   
         - run: pwd
